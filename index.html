@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+
+    <title>HortiFruti</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- modelos de fruta na lista e no carrinho -->
+    <div class="models">
+
+        <!-- fruta na lista -->
+        <div class="fruta-item">
+            <a href="">
+                <div class="fruta-item--img"><img src="" /></div>
+                <div id="button" class="fruta-item--add">+</div>
+            </a>
+            <div class="fruta-item--price">R$ --</div>
+            <div class="fruta-item--name">--</div>
+           <div>Estoque: 
+            <div class="fruta-item--desc">--</div>
+           </div> 
+        </div>
+
+        <!-- fruta no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            
+            <div class="cart--item-nome">--</div>
+            
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+           
+        </div>
+        
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <h1>HortiFruti</h1>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>frutas</h2>
+
+        <div class="fruta-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas frutas</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="data"> Data de entrega:  <input type="date"></div>
+                <div class="payment">Selecione o pagamento: </div>
+                <form action="" class="payment">
+                   
+                    <label class="payment--items" for="Pix">  <img class="payment--img" src="images/pix.png" alt=""> Pix</label>               
+                   
+                   
+                    <label class="payment--items" for="Cartão de Débito"> <img class="payment--img" src="images/card.png" alt=""> Cartão de débito</label>
+                    
+                    
+                    <label class="payment--items" for="Cartão de Crédito"> <img class="payment--img" src="images/credit.png" alt=""> Cartão de crédito</label>
+                   
+                    
+                  </form>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .frutaWindowArea -->
+    <div class="frutaWindowArea">
+        <div class="frutaWindowBody">
+            <div class="frutaInfo--cancelMobileButton">Voltar</div>
+            <div class="frutaBig">
+                <img src="" />
+            </div>
+            <div class="frutaInfo">
+                <h1>--</h1>
+                <div>Estoque</div>
+                <div class="frutaInfo--desc">Estoque</div>
+                <div class="frutaInfo--sizearea">
+                    <div class="frutaInfo--sector">Tamanho</div>
+                    <div class="frutaInfo--sizes">
+                        <div data-key="1kg" class="frutaInfo--size"> <span>--</span></div>
+                        <div data-key="5kg" class="frutaInfo--size"><span>--</span></div>
+                        <div data-key="10kg" class="frutaInfo--size selected"> <span>10kg</span></div>
+                    </div>
+                </div>
+                <div class="frutaInfo--pricearea">
+                    <div class="frutaInfo--sector">Preço</div>
+                    <div class="frutaInfo--price">
+                        <div class="frutaInfo--actualPrice">R$ --</div>
+                        <div class="frutaInfo--qtarea">
+                            <button class="frutaInfo--qtmenos">-</button>
+                            <div class="frutaInfo--qt">1</div>
+                            <button class="frutaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="frutaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="frutaInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .frutaWindowArea -->
+
+    <script src="frutas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
